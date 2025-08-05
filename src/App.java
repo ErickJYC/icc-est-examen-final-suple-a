@@ -8,6 +8,19 @@ import models.Estudiante;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        EstudianteController estudianteController = new EstudianteController();
+        List<Estudiante> estudiantes = crearEstudiantes();
+
+        for(Estudiante e : estudiantes){
+                e.setPorcentajesUnicos(e.calcularPorcentajesUnicos());
+        }
+
+        
+
+
+
+        
+
 
     }
 
